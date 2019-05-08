@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/haog29/bamazon_hw#readme",
   "dependencies": {
-    "inquirer": "^6.3.1"
-  }
+    "inquirer": "^6.3.1",
+    "mysql2": "^1.6.5"
+  },
+  "devDependencies": {}
 }
