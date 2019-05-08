@@ -19,7 +19,7 @@ if user says No:
 if user says Yes:
 
 ![third image](./assets/step2.1.PNG)
-![fourth image](./assets/step3.PNG)
+![fourth image](./assets/step3no.PNG)
 
 if everything is successful, it'll show a receipt of your purchase!
 
