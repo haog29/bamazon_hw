@@ -27,6 +27,6 @@ if everything is successful, it'll show a receipt of your purchase!
 
 1. Low-inventory :
 
-![sixth image](./assets/images/lowInventory.PNG)
+![sixth image](./assets/lowInventory.PNG)
 
 ### hope you like this bamazon app!
