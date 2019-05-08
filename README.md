@@ -11,12 +11,18 @@ this will give you options or lists on what command you wnat to shop for..
 It will show all the available products..
 and it will prompt some questions for you:
 ![first image](./assets/step1.PNG)
+
 if user says No:
+
 ![second image](./assets/step2.PNG)
+
 if user says Yes:
+
 ![third image](./assets/step2.1.PNG)
 ![fourth image](./assets/step3.PNG)
+
 if everything is successful, it'll show a receipt of your purchase!
+
 ![fifth image](./assets/step4-5.PNG)
 
 1. Low-inventory :
