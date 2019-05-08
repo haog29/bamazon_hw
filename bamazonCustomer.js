@@ -229,7 +229,6 @@ function itemChoice() {
     }).catch(function(e) {
 
         console.log(e)
-
         db.destroy()
 
     });
