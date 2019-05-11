@@ -1,18 +1,8 @@
-
-var { createConnection } = require('mysql2');
+require("dotenv").config()
 var inquirer = require('inquirer')
 
 // Sets up connection to SQL server
-
-var db = createConnection({
-
-    host: 'localhost',
-    port: 3306,
-    user: 'root',
-    password: 'root',
-    database: 'bamazon'
-
-});
+const db = require('./config/keys')
 
 //Inventory count :
 var inventory = 0;
@@ -83,12 +73,13 @@ function cmd() {
         } else {
 
         //if customer picks No... 
-
-            console.log('Comeback and shop with us again!')
-            console.log(`We'll have more stocks and Goodies to come..`)
-            console.log(`Hope you liked the transaction!`)
-
-            db.destroy()
+            console.log('______________________________________________')
+            console.log('                                               ')
+            console.log('     Comeback and shop with us again!')
+            console.log(` We'll have more stocks and Goodies to come..`)
+            console.log(`      Hope you liked the transaction!`)
+            console.log('______________________________________________')
+            process.exit()
             return
 
         }
@@ -209,7 +200,7 @@ function itemChoice() {
                     console.log('             Your total is $' + reciept + '.');
                     console.log('___________________Reciept_____________________________')
 
-                    db.destroy();
+                    process.exit();
 
                 })
 
@@ -221,7 +212,8 @@ function itemChoice() {
         }).catch(function(e) {
 
             console.log(e)
-            db.destroy()
+            process.exit()
+            
 
         });
 
@@ -229,7 +221,8 @@ function itemChoice() {
     }).catch(function(e) {
 
         console.log(e)
-        db.destroy()
+
+        process.exit()
 
     });
 
